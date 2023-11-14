@@ -27,7 +27,7 @@ public class Humain {
 	}
 	
 	public void direBonjour() {
-		parler("Bonjour! je m'appel" + nom + "et j'aime boire du " + boissonFavorite );
+		parler("Bonjour! je m'appel " + nom + " et j'aime boire du " + boissonFavorite );
 	}
 	public void boire() {
 		parler("Mmmm, un bon verre de" + boissonFavorite +" ! GLOUPS !");
@@ -42,10 +42,10 @@ public class Humain {
 	}
 	public void acheter(String bien , int prix) {
 		if(prix<=getQuantiteArgent()) {
-		parler(" jai " +quantiteArgent + " je vais pouvoir m'acheter " + bien + " a " +prix+" sous ");
+		parler(" j'ai " +quantiteArgent +" sous en poch."+"je vais pouvoir m'offrir " + bien + " a " +prix+" sous ");
 		perdreArgent(prix);}
 		else {
-			parler(" Je n'ai plus que  " +quantiteArgent + " Je ne peux m�me pas m'offrir " + bien + " a " +prix+" sous");
+			parler(" Je n'ai plus que  " +quantiteArgent + " Je ne peux meme pas m'offrir " + bien + " a " +prix+" sous");
 		}
 	}
 	
